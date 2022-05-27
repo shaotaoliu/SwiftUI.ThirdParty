@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A3A4F192832C41B0094C6A6 /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A4F182832C41B0094C6A6 /* WebImageView.swift */; };
 		4A3ED44F2828EA0D0015C293 /* ThirdPartyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3ED44E2828EA0D0015C293 /* ThirdPartyApp.swift */; };
 		4A3ED4512828EA0D0015C293 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3ED4502828EA0D0015C293 /* ContentView.swift */; };
 		4A3ED4532828EA0E0015C293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ED4522828EA0E0015C293 /* Assets.xcassets */; };
 		4A3ED4562828EA0E0015C293 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ED4552828EA0E0015C293 /* Preview Assets.xcassets */; };
 		4A3ED45E2828EA880015C293 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3ED45D2828EA880015C293 /* ChartsView.swift */; };
 		4A3ED4612828EA9A0015C293 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 4A3ED4602828EA9A0015C293 /* SwiftUICharts */; };
+		4AE51D402832CCCF0027FD7A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE51D3F2832CCCF0027FD7A /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A3A4F182832C41B0094C6A6 /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 		4A3ED44B2828EA0D0015C293 /* ThirdParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A3ED44E2828EA0D0015C293 /* ThirdPartyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyApp.swift; sourceTree = "<group>"; };
 		4A3ED4502828EA0D0015C293 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE51D402832CCCF0027FD7A /* SDWebImageSwiftUI in Frameworks */,
 				4A3ED4612828EA9A0015C293 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				4A3ED45D2828EA880015C293 /* ChartsView.swift */,
+				4A3A4F182832C41B0094C6A6 /* WebImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			name = ThirdParty;
 			packageProductDependencies = (
 				4A3ED4602828EA9A0015C293 /* SwiftUICharts */,
+				4AE51D3F2832CCCF0027FD7A /* SDWebImageSwiftUI */,
 			);
 			productName = ThirdParty;
 			productReference = 4A3ED44B2828EA0D0015C293 /* ThirdParty.app */;
@@ -129,6 +135,8 @@
 			mainGroup = 4A3ED4422828EA0D0015C293;
 			packageReferences = (
 				4A3ED45F2828EA9A0015C293 /* XCRemoteSwiftPackageReference "ChartView" */,
+				4AE51D3E2832CCCF0027FD7A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				4A116F15283C12AF00993B66 /* XCRemoteSwiftPackageReference "shiny" */,
 			);
 			productRefGroup = 4A3ED44C2828EA0D0015C293 /* Products */;
 			projectDirPath = "";
@@ -157,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A3ED4512828EA0D0015C293 /* ContentView.swift in Sources */,
+				4A3A4F192832C41B0094C6A6 /* WebImageView.swift in Sources */,
 				4A3ED44F2828EA0D0015C293 /* ThirdPartyApp.swift in Sources */,
 				4A3ED45E2828EA880015C293 /* ChartsView.swift in Sources */,
 			);
@@ -361,12 +370,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4A116F15283C12AF00993B66 /* XCRemoteSwiftPackageReference "shiny" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/shiny";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		4A3ED45F2828EA9A0015C293 /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppPear/ChartView";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
+			};
+		};
+		4AE51D3E2832CCCF0027FD7A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -376,6 +401,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4A3ED45F2828EA9A0015C293 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
+		};
+		4AE51D3F2832CCCF0027FD7A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AE51D3E2832CCCF0027FD7A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
